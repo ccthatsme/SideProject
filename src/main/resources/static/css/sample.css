@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+
+.mytext {
+	
+	height: 600px;
+	width: 300px;
+	}
+	
+body {
+	background-color: lightblue;
+}
+
+#t01 {
+	
+	background-color: grey;
+	width: 50%;
+	border-style: solid;
+	border: 5px solid;
+	border-collapse: collapse;
+	
+}
+
+#nav-ask{
+	display: none;
+}
+

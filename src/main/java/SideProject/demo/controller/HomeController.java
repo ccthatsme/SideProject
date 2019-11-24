@@ -24,14 +24,8 @@ public class HomeController {
 	@RequestMapping("note-page")
 	public ModelAndView notePage(){
 		
-		return new ModelAndView("notes");
+		return new ModelAndView("addnotes", "userList", ur.findAll());
 	}
 	
-	@RequestMapping("note-submission")
-	public String addNote(@RequestParam("date") String Date, @RequestParam("note") String Note) {
-	User u = new User(Date, Note);
-	ur.save(u);
-	return "notes";
-	}
-
+	
 }
